@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+//import { Observable } from 'rxjs'; //note to self: tentei sem e funcionou normal
 
 @Component({
   selector: 'app-form',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  data$: Object;
+
+  constructor(private instance:DataService) { }
 
   ngOnInit() {
+    this.instance.getData().subscribe(
+      result => this.data$ = result
+    )
   }
 
 }
