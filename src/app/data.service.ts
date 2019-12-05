@@ -8,7 +8,7 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getData() {
-      return this.http.get('https://jsonplaceholder.typicode.com/users')
+  getData(param) {
+      return this.http.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=minecraft&type=video&key=AIzaSyBZm5IzVbmsF61woZ-JRhKxhiRujcdp9iU')
   }
 }
