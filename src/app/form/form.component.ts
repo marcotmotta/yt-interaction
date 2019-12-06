@@ -22,7 +22,7 @@ export class FormComponent implements OnInit {
   }
 
   request(){
-    var search_topic = document.getElementById("search").value;
+    var search_topic = (<HTMLInputElement>document.getElementById("search")).value;
     this.instance.getData(search_topic).subscribe(
       result => this.data$ = result
     )

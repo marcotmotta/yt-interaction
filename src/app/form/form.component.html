@@ -6,7 +6,7 @@
         </button>
     </div>
     <ul class="list">
-        <li class="item" *ngFor="let d of data$.items">
+        <li class="item" *ngFor="let d of data$['items']">
             <mat-card class="card">
                 <mat-card-header>
                     <mat-card-title>{{d.snippet.title}}</mat-card-title>
