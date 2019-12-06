@@ -1,10 +1,12 @@
 .container{
-    height: 18vh;
+    height: 26vh;
     background-color: purple;
+    box-shadow: 0px 2px 20px grey;
 }
 
 mat-list{
     margin-left: 5vw;
+    padding-top: 20px;
 }
 
 mat-list-item{
@@ -12,7 +14,7 @@ mat-list-item{
     height: 25px !important;
 }
 
-h4{
+h2{
     color: white;
 }
 
