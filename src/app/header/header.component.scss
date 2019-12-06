@@ -2,3 +2,37 @@
     height: 100px;
     background-color: purple;
 }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+
+#logo{
+    display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5vw;
+}
+
+#title{
+    margin-left: 3vw;
+    color: white;
+    font-weight: bold;
+    font-size: 170%;
+    font-family: 'Sulphur Point', sans-serif;
+
+    div{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+i{
+    border: 2px solid white;
+    border-radius: 5px;
+}

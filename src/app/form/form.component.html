@@ -1,6 +1,11 @@
-<button (click) = "request()">alo</button>
+<div class="input-container">
+    <input matInput placeholder="Search" type="text" id="search">
+    <button mat-stroked-button (click) = "request()">
+        <i class="material-icons">search</i>
+    </button>
+</div>
 <ul>
-    <li *ngFor="let d of data$">
-        <mat-card>{{d.name}}</mat-card>
+    <li *ngFor="let d of data$.items">
+        <mat-card>{{d.snippet.title}}</mat-card>
     </li>
 </ul>

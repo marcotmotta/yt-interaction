@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 //import { Observable } from 'rxjs'; //note to self: tentei sem e funcionou normal
 
+//import * as angular from "angular";
+
 //declare const alo: any;
+//declare var angular: any;
 
 @Component({
   selector: 'app-form',
@@ -12,25 +15,17 @@ import { DataService } from '../data.service';
 export class FormComponent implements OnInit {
 
   data$: Object;
-  msg = "hello";
-  q = "minecraft"
 
   constructor(private instance:DataService) { }
 
   ngOnInit() {
-    /* this.instance.getData().subscribe(
-      result => this.data$ = result
-    ) */
   }
 
   request(){
-    this.instance.getData(this.q).subscribe(
+    var search_topic = document.getElementById("search").value;
+    this.instance.getData(search_topic).subscribe(
       result => this.data$ = result
     )
   }
-
-  /* $(".button-top").on(click, function(){
-    alert("aaaa");
-  }) */
 
 }
