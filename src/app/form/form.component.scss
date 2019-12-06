@@ -1,8 +1,43 @@
+.container{
+    min-height: 64vh;
+    text-align: center;
+}
+
 .input-container{
     text-align: center;
 }
 
 #search{
     margin: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
+}
+
+.card{
+    max-width: 480px;
+
+    img{
+        height: 360px !important;
+    }
+}
+
+.list{
+    padding: 0;
+    list-style-type:none;
+    display: block;
+    column-count: 2;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+    column-gap: 20px;
+}
+
+.space{
+    height: 20px;
+}
+
+.item{
+    display:inline-block;
+    margin-bottom: 50px;
 }

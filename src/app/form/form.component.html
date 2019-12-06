@@ -1,11 +1,22 @@
-<div class="input-container">
-    <input matInput placeholder="Search" type="text" id="search">
-    <button mat-stroked-button (click) = "request()">
-        <i class="material-icons">search</i>
-    </button>
+<div class="container">
+    <div class="input-container">
+        <input matInput placeholder="Search" type="text" id="search">
+        <button mat-stroked-button (click) = "request()">
+            <i class="material-icons">search</i>
+        </button>
+    </div>
+    <ul class="list">
+        <li class="item" *ngFor="let d of data$.items">
+            <mat-card class="card">
+                <mat-card-header>
+                    <mat-card-title>{{d.snippet.title}}</mat-card-title>
+                    <mat-card-subtitle>{{d.snippet.channelTitle}}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="{{d.snippet.thumbnails.high.url}}" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    <p>{{d.snippet.description}}</p>
+                </mat-card-content>
+            </mat-card>
+        </li>
+    </ul>
 </div>
-<ul>
-    <li *ngFor="let d of data$.items">
-        <mat-card>{{d.snippet.title}}</mat-card>
-    </li>
-</ul>

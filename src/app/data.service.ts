@@ -9,6 +9,6 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   getData(param) {
-      return this.http.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=' + param + '&type=video&key=AIzaSyBZm5IzVbmsF61woZ-JRhKxhiRujcdp9iU')
+      return this.http.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&q=' + param + '&type=video&key=AIzaSyBZm5IzVbmsF61woZ-JRhKxhiRujcdp9iU')
   }
 }
