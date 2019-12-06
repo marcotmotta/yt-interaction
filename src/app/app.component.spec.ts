@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'yt-interaction'`, () => {
+  it(`should have as title 'yt-search'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('yt-interaction');
+    expect(app.title).toEqual('yt-search');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('yt-interaction app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('yt-search app is running!');
   });
 });
